@@ -72,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* makes image fill the hero nicely */
-  filter: brightness(60%); /* darkens image for readable text */
+  object-fit: cover;
+  filter: brightness(60%); 
   z-index: 1;
 }
 
@@ -132,7 +132,7 @@ nav {
   color: var(--text-color);
   padding: 1em;
   text-align: center;
-  border-top: 2px solid var(--cornwall-blue); /* Demarcation line at the top */
+  border-top: 2px solid var(--cornwall-blue); 
 }
 
 nav a:hover, nav button:hover { background-color: var(--earth-light); }
@@ -142,7 +142,7 @@ nav a:active, nav button:active {
   transform: scale(0.95);
 }
 
-/* Demarcation lines between items */
+
 nav a, nav button {
   position: relative;
 }
@@ -179,6 +179,13 @@ footer a {
 footer a:hover { text-decoration: underline; }
 footer a:active { color: var(--button-text-color); }
 footer p { margin: 0.5em 0 0 0; }
+
+ul {
+  list-style: none;     
+  padding: 0;           
+  margin: 0;             
+  text-align: center;    
+}
 
 main {
   width: 100%;
