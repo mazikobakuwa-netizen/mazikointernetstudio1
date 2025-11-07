@@ -13,7 +13,7 @@
   font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  src: url('') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal?subsets=canadian-aboriginal') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
   /* berkshire-swash-regular - latin */
 @font-face {
