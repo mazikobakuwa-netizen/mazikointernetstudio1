@@ -8,24 +8,23 @@
   --button-text-color: #FFFFFF;
 }
 
-@font-face {
-  font-display: swap;
-  font-family: 'Noto Sans Canadian Aboriginal';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
-       url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff') format('woff');
-}
+ @font-face {
+      font-display: swap;
+      font-family: 'Noto Sans Canadian Aboriginal';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
+           url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff') format('woff');
+    }
 
-@font-face {
-  font-display: swap;
-  font-family: 'Berkshire Swash';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
-       url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff') format('woff');
-}
-
+    @font-face {
+      font-display: swap;
+      font-family: 'Berkshire Swash';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
+           url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff') format('woff');
+    }
 body {
   background-color: var(--almond-tan);
   color: var(--text-color);
@@ -38,95 +37,35 @@ body {
   min-height: 100vh;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+@font-face {
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
+       url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff') format('woff');
 }
 
+/* Heading styles */
 h1 {
   color: var(--cornwall-blue);
-  margin: 0 0 0.5em 0;
+  margin: 0 0 .5em 0;
   font-family: 'Berkshire Swash', cursive;
-  
+  /* Custom font size class */
 .berkshire-swash-40 {
   font-family: 'Berkshire Swash', cursive;
   font-size: 40px;
   line-height: 1.1;
 }
+
 h2, h3, h4, h5, h6 {
   color: var(--cornwall-blue);
-  margin: 0 0 0.5em 0;
+  margin: 0 0 .5em 0;
   font-family: 'Berkshire Swash', cursive;
-}
-
+/* Custom font size class */
 .berkshire-swash-25 {
   font-family: 'Berkshire Swash', cursive;
   font-size: 25px;
   line-height: 1.1;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  background-color: black; 
-}
-
-.hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(60%);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 1em;
-}
-
-.hero h2 {
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 3em;
-  margin-bottom: 1em;
-  color: var(--ocean-light);
-}
-
-.hero p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  margin-bottom: 1.5em;
-}
-
-.hero button {
-  background-color: var(--button-color);
-  color: var(--button-text-color);
-  border: none;
-  border-radius: 50px;
-  padding: 0.75em 1.5em;
-  font-size: 1em;
-  margin: 0 0.5em;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero button:hover {
-  background-color: var(--earth-light);
-  color: var(--text-color);
-  transform: scale(1.05);
 }
 
 button {
@@ -141,18 +80,10 @@ button {
   transition: background-color 0.3s ease;
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
-}
+a { color: inherit; text-decoration: underline; }
 
-.earth-background-light {
-  background-color: var(--earth-light);
-}
-
-.ocean-header-light {
-  color: var(--ocean-light);
-}
+.earth-background-light { background-color: var(--earth-light); }
+.ocean-header-light { color: var(--ocean-light); }
 
 nav {
   display: flex;
@@ -163,40 +94,33 @@ nav {
   color: var(--text-color);
   padding: 1em;
   text-align: center;
-  border-top: 2px solid var(--cornwall-blue);
+  border-top: 2px solid var(--cornwall-blue); /* Demarcation line at the top */
 }
 
-nav a:hover,
-nav button:hover {
-  background-color: var(--earth-light);
-}
+nav a:hover, nav button:hover { background-color: var(--earth-light); }
 
-nav a:active,
-nav button:active {
+nav a:active, nav button:active {
   background-color: var(--earth-light);
   transform: scale(0.95);
 }
 
-/* Demarcation lines between nav items */
-nav a,
-nav button {
+/* Demarcation lines between items */
+nav a, nav button {
   position: relative;
 }
 
-nav a::after,
-nav button::after {
+nav a::after, nav button::after {
   content: '';
   position: absolute;
   width: 1px;
   height: 100%;
   background-color: var(--cornwall-blue);
-  right: -2.5em;
+  right: -2.5em; 
   top: 0;
 }
 
-nav a:last-child::after,
-nav button:last-child::after {
-  display: none;
+nav a:last-child::after, nav button:last-child::after {
+  display: none; 
 }
 
 footer {
@@ -214,17 +138,9 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer a:active {
-  color: var(--button-text-color);
-}
-
-footer p {
-  margin: 0.5em 0 0 0;
-}
+footer a:hover { text-decoration: underline; }
+footer a:active { color: var(--button-text-color); }
+footer p { margin: 0.5em 0 0 0; }
 
 main {
   width: 100%;
@@ -233,38 +149,14 @@ main {
   box-sizing: border-box;
 }
 
-header {
-  width: 100%;
-  text-align: center;
-  padding: 1em 0;
-}
-
-p, section {
-  text-align: center;
-}
+header { width: 100%; text-align: center; padding: 1em 0; }
+p, section { text-align: center; }
 
 @media (max-width: 600px) {
-  body {
-    padding: 1em;
-  }
-
+  body { padding: 1em; }
   nav {
     flex-direction: column;
     gap: 0.5em;
   }
-
-  nav a,
-  nav button {
-    display: block;
-    margin: 0.5em 0;
-  }
-
-  .hero h2 {
-    font-size: 2em;
-  }
-
-  .hero p {
-    font-size: 1em;
-  }
+  nav a, nav button { display: block; margin: 0.5em 0; }
 }
-
