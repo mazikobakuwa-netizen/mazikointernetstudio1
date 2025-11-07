@@ -17,14 +17,12 @@
   src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal.woff2?subsets=canadian-aboriginal') format('woff2');
 }
 }
-
+/* original-surfer-regular - latin */
 @font-face {
-  font-family: "Original Surfer";
+  font-family: 'Original Surfer';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: local("Original Surfer"),
-       url("../fonts/original-surfer-v25-latin-regular.woff2") format("woff2");
+  src: url('https://gwfh.mranftl.com/fonts/original-surfer?subsets=latinoriginal-surfer-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 body {
