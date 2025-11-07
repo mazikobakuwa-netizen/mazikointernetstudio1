@@ -8,22 +8,22 @@
   --button-text-color: #FFFFFF;
 }
 
-/* noto-sans-canadian-aboriginal-regular - canadian-aboriginal */
 @font-face {
   font-display: swap;
   font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v17-canadian-aboriginal-regular.woff2') format('woff2');
+  src: url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
+       url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff') format('woff');
 }
 
-/* berkshire-swash-regular - latin */
 @font-face {
   font-display: swap;
   font-family: 'Berkshire Swash';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2');
+  src: url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
+       url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff') format('woff');
 }
 
 body {
@@ -39,16 +39,25 @@ body {
 }
 
 ul {
-  list-style: none;     
-  padding: 0;            
-  margin: 0;             
-  text-align: center; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
-/* Heading styles */
-h1, h2, h3, h4, h5, h6 {
+h1 {
   color: var(--cornwall-blue);
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
+  font-family: 'Berkshire Swash', cursive;
+  
+.berkshire-swash-40 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 40px;
+  line-height: 1.1;
+}
+h2, h3, h4, h5, h6 {
+  color: var(--cornwall-blue);
+  margin: 0 0 0.5em 0;
   font-family: 'Berkshire Swash', cursive;
 }
 
@@ -68,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   color: white;
   text-align: center;
+  background-color: black; 
 }
 
 .hero img {
@@ -76,14 +86,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   filter: brightness(60%);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
+  max-width: 800px;
+  padding: 1em;
 }
 
 .hero h2 {
@@ -91,6 +103,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3em;
   margin-bottom: 1em;
   color: var(--ocean-light);
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
 }
 
 .hero button {
@@ -136,7 +154,6 @@ a {
   color: var(--ocean-light);
 }
 
-/* Navigation styling */
 nav {
   display: flex;
   justify-content: center;
@@ -146,39 +163,42 @@ nav {
   color: var(--text-color);
   padding: 1em;
   text-align: center;
-  border-top: 2px solid var(--cornwall-blue); 
+  border-top: 2px solid var(--cornwall-blue);
 }
 
-nav a:hover, nav button:hover {
+nav a:hover,
+nav button:hover {
   background-color: var(--earth-light);
 }
 
-nav a:active, nav button:active {
+nav a:active,
+nav button:active {
   background-color: var(--earth-light);
   transform: scale(0.95);
 }
 
-/* Demarcation lines between items */
-nav a, nav button {
+/* Demarcation lines between nav items */
+nav a,
+nav button {
   position: relative;
 }
 
-nav a::after, nav button::after {
+nav a::after,
+nav button::after {
   content: '';
   position: absolute;
   width: 1px;
   height: 100%;
   background-color: var(--cornwall-blue);
-  right: -2.5em; /* Adjust as needed */
+  right: -2.5em;
   top: 0;
 }
 
 nav a:last-child::after,
 nav button:last-child::after {
-  display: none; 
+  display: none;
 }
 
-/* Footer styling */
 footer {
   background-color: var(--earth-light);
   color: var(--text-color);
@@ -223,19 +243,28 @@ p, section {
   text-align: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   body {
     padding: 1em;
   }
-  
+
   nav {
     flex-direction: column;
     gap: 0.5em;
   }
 
-  nav a, nav button {
+  nav a,
+  nav button {
     display: block;
     margin: 0.5em 0;
   }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
 }
+
