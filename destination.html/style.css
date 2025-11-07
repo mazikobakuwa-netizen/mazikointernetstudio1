@@ -8,23 +8,24 @@
   --button-text-color: #FFFFFF;
 }
 
- @font-face {
-      font-display: swap;
-      font-family: 'Noto Sans Canadian Aboriginal';
-      font-style: normal;
-      font-weight: 400;
-      src: url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
-           url('fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff') format('woff');
-    }
+/* noto-sans-canadian-aboriginal-regular - canadian-aboriginal */
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans Canadian Aboriginal';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v17-canadian-aboriginal-regular.woff2') format('woff2');
+}
 
-    @font-face {
-      font-display: swap;
-      font-family: 'Berkshire Swash';
-      font-style: normal;
-      font-weight: 400;
-      src: url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
-           url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff') format('woff');
-    }
+/* berkshire-swash-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2');
+}
+
 body {
   background-color: var(--almond-tan);
   color: var(--text-color);
@@ -37,30 +38,13 @@ body {
   min-height: 100vh;
 }
 
-@font-face {
-  font-family: 'Berkshire Swash';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
-       url('fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff') format('woff');
-}
-
 /* Heading styles */
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--cornwall-blue);
   margin: 0 0 .5em 0;
   font-family: 'Berkshire Swash', cursive;
-  /* Custom font size class */
-.berkshire-swash-40 {
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 40px;
-  line-height: 1.1;
 }
 
-h2, h3, h4, h5, h6 {
-  color: var(--cornwall-blue);
-  margin: 0 0 .5em 0;
-  font-family: 'Berkshire Swash', cursive;
 /* Custom font size class */
 .berkshire-swash-25 {
   font-family: 'Berkshire Swash', cursive;
@@ -80,11 +64,20 @@ button {
   transition: background-color 0.3s ease;
 }
 
-a { color: inherit; text-decoration: underline; }
+a {
+  color: inherit;
+  text-decoration: underline;
+}
 
-.earth-background-light { background-color: var(--earth-light); }
-.ocean-header-light { color: var(--ocean-light); }
+.earth-background-light {
+  background-color: var(--earth-light);
+}
 
+.ocean-header-light {
+  color: var(--ocean-light);
+}
+
+/* Navigation styling */
 nav {
   display: flex;
   justify-content: center;
@@ -97,7 +90,9 @@ nav {
   border-top: 2px solid var(--cornwall-blue); /* Demarcation line at the top */
 }
 
-nav a:hover, nav button:hover { background-color: var(--earth-light); }
+nav a:hover, nav button:hover {
+  background-color: var(--earth-light);
+}
 
 nav a:active, nav button:active {
   background-color: var(--earth-light);
@@ -115,14 +110,16 @@ nav a::after, nav button::after {
   width: 1px;
   height: 100%;
   background-color: var(--cornwall-blue);
-  right: -2.5em; 
+  right: -2.5em; /* Adjust as needed */
   top: 0;
 }
 
-nav a:last-child::after, nav button:last-child::after {
-  display: none; 
+nav a:last-child::after,
+nav button:last-child::after {
+  display: none; /* Remove line after the last item */
 }
 
+/* Footer styling */
 footer {
   background-color: var(--earth-light);
   color: var(--text-color);
@@ -138,9 +135,17 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover { text-decoration: underline; }
-footer a:active { color: var(--button-text-color); }
-footer p { margin: 0.5em 0 0 0; }
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: var(--button-text-color);
+}
+
+footer p {
+  margin: 0.5em 0 0 0;
+}
 
 main {
   width: 100%;
@@ -149,14 +154,29 @@ main {
   box-sizing: border-box;
 }
 
-header { width: 100%; text-align: center; padding: 1em 0; }
-p, section { text-align: center; }
+header {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+}
 
+p, section {
+  text-align: center;
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
-  body { padding: 1em; }
+  body {
+    padding: 1em;
+  }
+
   nav {
     flex-direction: column;
     gap: 0.5em;
   }
-  nav a, nav button { display: block; margin: 0.5em 0; }
+
+  nav a, nav button {
+    display: block;
+    margin: 0.5em 0;
+  }
 }
