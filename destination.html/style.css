@@ -53,10 +53,10 @@ h2, h3, h4, h5, h6 { color: var(--cornwall-blue); margin: 0 0 .5em 0; }
 }
 
 button {
-  background-color: var(--button-bg-color);
+ background-color: var(--button-color);
   color: var(--button-text-color);
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 1em;
   font-family: "Noto Sans Canadian Aboriginal", sans-serif;
