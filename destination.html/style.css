@@ -41,8 +41,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--cornwall-blue);
   margin: 0 0 .5em 0;
-
-.original-surfer-50 {
   font-family: "Original Surfer", cursive, sans-serif;
   font-size: 50px;
   line-height: 1.1;
