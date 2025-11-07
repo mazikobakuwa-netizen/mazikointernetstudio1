@@ -38,6 +38,13 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  list-style: none;     
+  padding: 0;            
+  margin: 0;             
+  text-align: center; 
+}
+
 /* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   color: var(--cornwall-blue);
@@ -45,16 +52,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Berkshire Swash', cursive;
 }
 
-/* Custom font size class */
 .berkshire-swash-25 {
   font-family: 'Berkshire Swash', cursive;
   font-size: 25px;
   line-height: 1.1;
 }
+
 .hero {
   position: relative;
   width: 100%;
-  height: 80vh; /* makes it fill most of the screen */
+  height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -69,14 +76,14 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* makes image fill the hero nicely */
-  filter: brightness(60%); /* darkens image for readable text */
+  object-fit: cover; 
+  filter: brightness(60%);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; /* puts text above image */
+  z-index: 2; 
 }
 
 .hero h2 {
@@ -139,7 +146,7 @@ nav {
   color: var(--text-color);
   padding: 1em;
   text-align: center;
-  border-top: 2px solid var(--cornwall-blue); /* Demarcation line at the top */
+  border-top: 2px solid var(--cornwall-blue); 
 }
 
 nav a:hover, nav button:hover {
@@ -168,7 +175,7 @@ nav a::after, nav button::after {
 
 nav a:last-child::after,
 nav button:last-child::after {
-  display: none; /* Remove line after the last item */
+  display: none; 
 }
 
 /* Footer styling */
