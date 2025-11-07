@@ -1,8 +1,0 @@
-/* noto-sans-canadian-aboriginal-regular - canadian-aboriginal */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Sans Canadian Aboriginal';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal.woff2?subsets=canadian-aboriginal') format('woff2');
-}
