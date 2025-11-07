@@ -55,7 +55,7 @@ button {
   background-color: var(--button-color);
   color: var(--button-text-color);
   border: none;
-  border-radius: 8px;
+  border-radius: 200px;
   cursor: pointer;
   font-size: 1em;
   font-family: "Noto Sans Canadian Aboriginal", sans-serif;
