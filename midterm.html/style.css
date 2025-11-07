@@ -1,0 +1,215 @@
+:root {
+  --almond-tan: #EFDECD;
+  --earth-light: #DEB887;
+  --cornwall-blue: #6495ED;
+  --ocean-light: #87CEEB;
+  --text-color: #000000;
+  --button-color: #05336e;
+  --button-text-color: #FFFFFF;
+}
+
+/* noto-sans-canadian-aboriginal-regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans Canadian Aboriginal';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
+       url('fonts/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff') format('woff');
+}
+
+/* berkshire-swash-regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
+       url('fonts/berkshire-swash-v22-latin-regular.woff') format('woff');
+}
+
+/* Example usage */
+body {
+  font-family: 'Noto Sans Canadian Aboriginal', sans-serif;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+body {
+  background-color: var(--almond-tan);
+  color: var(--text-color);
+  font-family: "Noto Sans Canadian Aboriginal", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--cornwall-blue);
+  margin: 0 0 .5em 0;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+/* Custom font size class */
+.berkshire-swash-25 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 25px;
+  line-height: 1.1;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* makes it fill most of the screen */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* puts text above image */
+}
+
+.hero h2 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: var(--ocean-light);
+}
+
+.hero button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 50px;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: var(--earth-light);
+  color: var(--text-color);
+  transform: scale(1.05);
+}
+button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Noto Sans Canadian Aboriginal", sans-serif;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease;
+}
+
+a { color: inherit; text-decoration: underline; }
+
+.earth-background-light { background-color: var(--earth-light); }
+.ocean-header-light { color: var(--ocean-light); }
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-top: 4em;
+  background-color: var(--earth-light);
+  color: var(--text-color);
+  padding: 1em;
+  text-align: center;
+  border-top: 2px solid var(--cornwall-blue); 
+}
+
+nav a:hover, nav button:hover { background-color: var(--earth-light); }
+
+nav a:active, nav button:active {
+  background-color: var(--earth-light);
+  transform: scale(0.95);
+}
+
+
+nav a, nav button {
+  position: relative;
+}
+
+nav a::after, nav button::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--cornwall-blue);
+  right: -2.5em; /* Adjust as needed */
+  top: 0;
+}
+
+nav a:last-child::after, nav button:last-child::after {
+  display: none; /* Remove line after the last item */
+}
+
+footer {
+  background-color: var(--earth-light);
+  color: var(--text-color);
+  padding: 1em;
+  text-align: center;
+  margin-top: 2em;
+  width: 100%;
+}
+
+footer a {
+  margin: 0 1em;
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+footer a:hover { text-decoration: underline; }
+footer a:active { color: var(--button-text-color); }
+footer p { margin: 0.5em 0 0 0; }
+
+ul {
+  list-style: none;     
+  padding: 0;           
+  margin: 0;             
+  text-align: center;    
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+header { width: 100%; text-align: center; padding: 1em 0; }
+p, section { text-align: center; }
+
+@media (max-width: 600px) {
+  body { padding: 1em; }
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  nav a, nav button { display: block; margin: 0.5em 0; }
+}
