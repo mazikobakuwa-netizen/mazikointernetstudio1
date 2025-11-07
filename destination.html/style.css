@@ -13,17 +13,15 @@
   font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal.woff2?subsets=canadian-aboriginal') format('woff2');
+  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal.woff2?subsets=canadian-aboriginal') 
 }
-}
-/* original-surfer-regular - latin */
+/* berkshire-swash-regular - latin */
 @font-face {
-  font-family: 'Original Surfer';
+  font-family: 'Berkshire Swash';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal?subsets=canadian-aboriginal') format('woff2');
+  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash?subsets=latin') 
 }
-
 body {
   background-color: var(--almond-tan);
   color: var(--text-color);
@@ -37,16 +35,21 @@ body {
 }
 
 h1 { color: var(--cornwall-blue); margin: 0 0 .5em 0; }
-
-.original-surfer-35 {
-  font-family: "Original Surfer", cursive, sans-serif;
-  font-size: 35px;
-  line-height: 1.1;
-}
+@font-face {
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash?subsets=latin') 
+} 
 h2, h3, h4, h5, h6 { color: var(--cornwall-blue); margin: 0 0 .5em 0; }
-
-.original-surfer-25 {
-  font-family: "Original Surfer", cursive, sans-serif;
+@font-face {
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash?subsets=latin') 
+}
+berkshire-swash-25 {
+  font-family: 'Berkshire Swash';
   font-size: 25px;
   line-height: 1.1;
 }
@@ -105,6 +108,7 @@ nav a::after, nav button::after {
 nav a:last-child::after, nav button:last-child::after {
   display: none; /* Remove line after the last item */
 }
+
 footer {
   background-color: var(--earth-light);
   color: var(--text-color);
