@@ -1,0 +1,61 @@
+/* Colors as variables for easy theming */
+:root {
+  --earth-dark: #8B4513;
+  --earth-light: #DEB887;
+  --ocean-blue: #4169E1;
+  --ocean-light: #87CEEB;
+  --text-color: #000000;
+}
+
+/* Font faces */
+@font-face {
+  font-family: "Noto Sans Canadian Aboriginal";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Noto Sans Canadian Aboriginal Regular"),
+       url("../fonts/noto-sans-canadian-aboriginal-v28-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Original Surfer";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Original Surfer"),
+       url("../fonts/original-surfer-v25-latin-regular.woff2") format("woff2");
+}
+
+/* Base styles */
+body {
+  background-color: var(--earth-dark);
+  color: var(--text-color);
+  font-family: "Noto Sans Canadian Aboriginal", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ocean-blue);
+  margin: 0 0 .5em 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.earth-background-light {
+  background-color: var(--earth-light);
+}
+
+.ocean-header-light {
+  color: var(--ocean-light);
+}
+
+.original-surfer-50 {
+  font-family: "Original Surfer", cursive, sans-serif;
+  font-size: 50px;
+  line-height: 1.1;
+}
