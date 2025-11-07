@@ -4,7 +4,6 @@
   --cornwall-blue: #6495ED;
   --ocean-light: #87CEEB;
   --text-color: #000000;
-  --button-bg-color: #6495ED;
   --button-color: #05336e;
   --button-text-color: #FFFFFF;
 }
@@ -53,14 +52,13 @@ h2, h3, h4, h5, h6 { color: var(--cornwall-blue); margin: 0 0 .5em 0; }
 }
 
 button {
- background-color: var(--button-color);
-  color: var(--button-text-color);
+  color: var(--button-color);
   border: none;
-  border-radius: 12px;
+  border-radius: 99px;
   cursor: pointer;
   font-size: 1em;
   font-family: "Noto Sans Canadian Aboriginal", sans-serif;
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
   transition: background-color 0.3s ease;
 }
 
