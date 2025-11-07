@@ -10,22 +10,18 @@
 
 /* noto-sans-canadian-aboriginal-regular - canadian-aboriginal */
 @font-face {
-  font-display: swap;
   font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal/noto-sans-canadian-aboriginal-v17-canadian-aboriginal-regular.woff2') format('woff2');
+  src: url('') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-/* berkshire-swash-regular - latin */
+  /* berkshire-swash-regular - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Berkshire Swash';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2');
+  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash?subsets=latin') 
 }
-
 body {
   background-color: var(--almond-tan);
   color: var(--text-color);
@@ -36,6 +32,14 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+}
+/* berkshire-swash-regular - latin */
+@font-face {
+  font-display: swap; /* Ensures text remains visible while font loads */
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash/berkshire-swash-v22-latin-regular.woff2') format('woff2');
 }
 
 /* Heading styles */
@@ -64,20 +68,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
-}
+a { color: inherit; text-decoration: underline; }
 
-.earth-background-light {
-  background-color: var(--earth-light);
-}
+.earth-background-light { background-color: var(--earth-light); }
+.ocean-header-light { color: var(--ocean-light); }
 
-.ocean-header-light {
-  color: var(--ocean-light);
-}
-
-/* Navigation styling */
 nav {
   display: flex;
   justify-content: center;
@@ -90,9 +85,7 @@ nav {
   border-top: 2px solid var(--cornwall-blue); /* Demarcation line at the top */
 }
 
-nav a:hover, nav button:hover {
-  background-color: var(--earth-light);
-}
+nav a:hover, nav button:hover { background-color: var(--earth-light); }
 
 nav a:active, nav button:active {
   background-color: var(--earth-light);
@@ -114,12 +107,10 @@ nav a::after, nav button::after {
   top: 0;
 }
 
-nav a:last-child::after,
-nav button:last-child::after {
+nav a:last-child::after, nav button:last-child::after {
   display: none; /* Remove line after the last item */
 }
 
-/* Footer styling */
 footer {
   background-color: var(--earth-light);
   color: var(--text-color);
@@ -135,17 +126,9 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer a:active {
-  color: var(--button-text-color);
-}
-
-footer p {
-  margin: 0.5em 0 0 0;
-}
+footer a:hover { text-decoration: underline; }
+footer a:active { color: var(--button-text-color); }
+footer p { margin: 0.5em 0 0 0; }
 
 main {
   width: 100%;
@@ -154,29 +137,14 @@ main {
   box-sizing: border-box;
 }
 
-header {
-  width: 100%;
-  text-align: center;
-  padding: 1em 0;
-}
+header { width: 100%; text-align: center; padding: 1em 0; }
+p, section { text-align: center; }
 
-p, section {
-  text-align: center;
-}
-
-/* Responsive adjustments */
 @media (max-width: 600px) {
-  body {
-    padding: 1em;
-  }
-
+  body { padding: 1em; }
   nav {
     flex-direction: column;
     gap: 0.5em;
   }
-
-  nav a, nav button {
-    display: block;
-    margin: 0.5em 0;
-  }
+  nav a, nav button { display: block; margin: 0.5em 0; }
 }
