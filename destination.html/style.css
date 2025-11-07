@@ -8,20 +8,35 @@
   --button-text-color: #FFFFFF;
 }
 
-/* noto-sans-canadian-aboriginal-regular - canadian-aboriginal */
+/* noto-sans-canadian-aboriginal-regular */
 @font-face {
+  font-display: swap;
   font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal?subsets=canadian-aboriginal')
+  src: url('fonts/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
+       url('fonts/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff') format('woff');
 }
-  /* berkshire-swash-regular - latin */
+
+/* berkshire-swash-regular */
 @font-face {
+  font-display: swap;
   font-family: 'Berkshire Swash';
   font-style: normal;
   font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash?subsets=latin') 
+  src: url('fonts/berkshire-swash-v22-latin-regular.woff2') format('woff2'),
+       url('fonts/berkshire-swash-v22-latin-regular.woff') format('woff');
 }
+
+/* Example usage */
+body {
+  font-family: 'Noto Sans Canadian Aboriginal', sans-serif;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
 body {
   background-color: var(--almond-tan);
   color: var(--text-color);
@@ -32,13 +47,6 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-}
-/* berkshire-swash-regular - latin */
-@font-face {
-  font-family: 'Berkshire Swash';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://gwfh.mranftl.com/fonts/berkshire-swash?subsets=latin') 
 }
 
 /* Heading styles */
