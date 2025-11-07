@@ -69,7 +69,7 @@ a { color: inherit; text-decoration: underline; }
 .ocean-header-light { color: var(--ocean-light); }
 
 nav {
-   display: flex;
+  display: flex;
   justify-content: center;
   gap: 5em;
   margin-top: 4em;
@@ -77,11 +77,33 @@ nav {
   color: var(--text-color);
   padding: 1em;
   text-align: center;
+  border-top: 2px solid var(--cornwall-blue); /* Demarcation line at the top */
 }
+
 nav a:hover, nav button:hover { background-color: var(--earth-light); }
+
 nav a:active, nav button:active {
   background-color: var(--earth-light);
   transform: scale(0.95);
+}
+
+/* Demarcation lines between items */
+nav a, nav button {
+  position: relative;
+}
+
+nav a::after, nav button::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: var(--cornwall-blue);
+  right: -2.5em; /* Adjust as needed */
+  top: 0;
+}
+
+nav a:last-child::after, nav button:last-child::after {
+  display: none; /* Remove line after the last item */
 }
 footer {
   background-color: var(--earth-light);
