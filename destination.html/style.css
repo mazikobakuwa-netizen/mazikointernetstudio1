@@ -9,13 +9,13 @@
   --button-text-color: #FFFFFF;
 }
 
+/* noto-sans-canadian-aboriginal-regular - canadian-aboriginal */
 @font-face {
-  font-family: "Noto Sans Canadian Aboriginal";
+  font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: local("Noto Sans Canadian Aboriginal Regular"),
-       url("../fonts/noto-sans-canadian-aboriginal-v28-latin-regular.woff2") format("woff2");
+  src: url('https://gwfh.mranftl.com/fonts/noto-sans-canadian-aboriginal.woff2?subsets=canadian-aboriginal') format('woff2');
+}
 }
 
 @font-face {
