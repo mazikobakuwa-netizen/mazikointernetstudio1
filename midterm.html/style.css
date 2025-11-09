@@ -13,8 +13,7 @@
   font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  src: url('midterm.html\fonts\noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
-       url('midterm.html\fonts\noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff');
+  src: url('midterm.html/fonts/noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2');
 }
 
 /* berkshire-swash-regular */
@@ -22,8 +21,7 @@
   font-family: 'Berkshire Swash';
   font-style: normal;
   font-weight: 400;
-  src: url('midterm.html\fonts\berkshire-swash-v22-latin-regular.woff2') format('woff2'),
-       url('midterm.html\fonts\berkshire-swash-v22-latin-regular.woff2') format('woff');
+  src: url('midterm.html/fonts/berkshire-swash-v22-latin-regular.woff2') format('woff2');
 }
 
 body {
