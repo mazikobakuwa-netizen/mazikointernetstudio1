@@ -13,8 +13,8 @@
   font-family: 'Noto Sans Canadian Aboriginal';
   font-style: normal;
   font-weight: 400;
-  src: url('C:\Users\Koko\OneDrive\University of Texas at Dallas\Classes\Assignments\Projects\Internet Studio\midterm.html\fonts\noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
-       url('C:\Users\Koko\OneDrive\University of Texas at Dallas\Classes\Assignments\Projects\Internet Studio\midterm.html\fonts\noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff');
+  src: url('midterm.html\fonts\noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff2'),
+       url('midterm.html\fonts\noto-sans-canadian-aboriginal-v28-canadian-aboriginal-regular.woff2') format('woff');
 }
 
 /* berkshire-swash-regular */
@@ -22,8 +22,8 @@
   font-family: 'Berkshire Swash';
   font-style: normal;
   font-weight: 400;
-  src: url('C:\Users\Koko\OneDrive\University of Texas at Dallas\Classes\Assignments\Projects\Internet Studio\midterm.html\fonts\berkshire-swash-v22-latin-regular.woff2') format('woff2'),
-       url('C:\Users\Koko\OneDrive\University of Texas at Dallas\Classes\Assignments\Projects\Internet Studio\midterm.html\fonts\berkshire-swash-v22-latin-regular.woff2') format('woff');
+  src: url('midterm.html\fonts\berkshire-swash-v22-latin-regular.woff2') format('woff2'),
+       url('midterm.html\fonts\berkshire-swash-v22-latin-regular.woff2') format('woff');
 }
 
 body {
