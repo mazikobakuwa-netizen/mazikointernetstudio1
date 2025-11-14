@@ -1,4 +1,42 @@
-header, footer {
+container {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  gap: 10px;
+  grid-template-areas: "header header"
+                       "nav nav" 
+                       "left right
+                       "footer footer";                  
+  grid-template-rows: 200px 400px;
+  grid-template-columns: 2fr 4fr; 
+}
+
+h1, h2 {
+  font-family: monospace;
+  text-align: center;
+}
+
+header {
+  background-color: dodgerblue;
+}
+
+nav {
+  background-color: beige;
+}
+
+.left {
+  background-color: dodgerblue;
+}
+
+.right {
+  background-color: beige;
+}
+
+footer {
+  background-color: dodgerblue;
+}
+/*header, footer {
   background-color: #408ee0;
   text-align: center;
   min-width: 500px;
@@ -59,3 +97,4 @@ img {
 footer {
   margin-top: 44px;
 }
+*/
