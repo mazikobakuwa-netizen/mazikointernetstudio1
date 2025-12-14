@@ -29,6 +29,7 @@
       --color-accent:#FACC15;
       --color-surface:#FFFFFF;
       --color-text: #1F2933;
+      --color-bg: #F9FAFB;
 }
 
 @font-face {
@@ -59,7 +60,7 @@ body {
       text-decoration: none;
 }
 
-.skip-link: focus {
+.skip-link:focus {
       top: 1rem;
 }
 
@@ -100,8 +101,8 @@ nav a {
       font-weight: 600;
 }
 
-nav a: hover,
-nav a: focus {
+nav a:hover,
+nav a:focus {
       color: var(--color-primary);
       justify-content: center;
 }
@@ -111,7 +112,7 @@ nav a: focus {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(
+      background: linear-gradient;(
             135deg,
             var(--color-primary);
             var(--color-secondary);
@@ -162,23 +163,22 @@ nav a: focus {
 
 .category-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
       margin-top: 1rem;
 }
 
 .card{
       background-color: var(--color-surface);
-      padding: 1.5rem
+      padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 8px 20px rbga (0,0,0, 0.05);
+      box-shadow: 0 8px 20px rGba (0,0,0,0.05);
 }
       
-.footer {
+footer {
       background-color: var(--color-primary);
       color: white;
       text-align: center;
-      justify-content: center;
       padding: 1.5rem;
       margin-top: 2rem;
 }
