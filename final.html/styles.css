@@ -24,11 +24,11 @@
 
  Insert all your glorious CSS styles below! */
 :root {
-      color-primary:#1E3A8A;
-      color-secondary:#3B82F6;
-      color-accent:#FACC15;
-      color-surface:#FFFFFF;
-      color-text: #1F2933;
+      --color-primary:#1E3A8A;
+      --color-secondary:#3B82F6;
+      --color-accent:#FACC15;
+      --color-surface:#FFFFFF;
+      --color-text: #1F2933;
 }
 
 @font-face {
@@ -66,22 +66,26 @@ body {
 header {
       background-color: var(color-surface);
       padding: 1rem;
+      text-align: center;
       border-bottom: 1px solid #e5e7eb;
 }
 
 header h1 {
       margin: 0;
+      text-align: center;
 }
 
 header h2 {
       margin-top: 0.25rem;
       font-weight: normal;
+      text-align: center;
       color: #555;
 }
 
 nav ul {
       list-style: none;
       display: flex;
+      text-align: center;
       gap: 1.5rem;
       padding: 0;
       margin-top: 1rem;
@@ -89,6 +93,7 @@ nav ul {
 
 nav a {
       text-decoration: none;
+      text-align: center;
       color: var(color-text);
       font-weight: 600;
 }
