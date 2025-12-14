@@ -126,7 +126,7 @@ nav a:focus {
       max-width: 700px;
 }
 
-.hero-actions{
+.hero-buttons{
       margin-top: 1.5rem;
       display: flex;
       justify-content: center;
@@ -139,7 +139,8 @@ nav a:focus {
       border-radius: 999px;
       text-decoration: none;
       font-weight: 600;
-      transition: transform 0.2s ease;
+      display:inline-block;
+      transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover,
@@ -148,13 +149,14 @@ nav a:focus {
 }
 
 .button.primary{
-      background-color: var(--color-surface);
+      background-color: var(--color-primary);
       color: var(--color-primary)
 }
 
 .button.secondary{
-      border: 2px solid white;
-      color: white;
+      background-color:transparent;
+      border: 2px (--color-primary);
+      color: var(--color-primary);
 }
 
 .categories{
