@@ -196,10 +196,11 @@ nav a:focus {
       display: flex;
       flex-direction: column; 
       height: 100%;
+      background-color: var(--color-primary)
 }
 
 .card{
-      background-color: var(--color-surface);
+      background-color: var(--color-primary);
       padding: 20rem;
       border-radius: 8px;
       box-shadow: 0 8px 20px rgba (0, 0, 0, 0.05);
