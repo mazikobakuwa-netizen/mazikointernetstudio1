@@ -23,7 +23,7 @@
        
 
  Insert all your glorious CSS styles below! */
-:root {
+:root{
       --color-primary:#1E3A8A;
       --color-secondary:#3B82F6;
       --color-accent:#FACC15;
@@ -32,17 +32,17 @@
       --color-bg: #F9FAFB;
 }
 
-@font-face {
+@font-face{
       font-family: 'Inter';
       src: url('fonts/inter/') format('');
 }
 
-html {
+html{
       font-size: clamp(1rem,1vw +0.5rem,1.25rem);
       scroll-behavior: smooth;
 }
 
-body {
+body{
       margin: 0;
       font-family: 'Inter';
       background-color: var(--color-bg);
@@ -50,7 +50,7 @@ body {
       line-height:1.6;
 }
 
-.skip-link {
+.skip-link{
       position: absolute;
       top: -40px;
       left: 1rem;
@@ -60,30 +60,30 @@ body {
       text-decoration: none;
 }
 
-.skip-link:focus {
+.skip-link:focus{
       top: 1rem;
 }
 
-header {
+header{
       background-color: var(--color-surface);
       padding: 1rem;
       text-align: center;
       border-bottom: 1px solid #e5e7eb;
 }
 
-header h1 {
+header h1{
       margin: 0;
       text-align: center;
 }
 
-header h2 {
+header h2{
       margin-top: 0.25rem;
       font-weight: normal;
       text-align: center;
       color: #555;
 }
 
-nav ul {
+nav ul{
       list-style: none;
       display: flex;
       justify-content: center;
@@ -93,7 +93,7 @@ nav ul {
       margin-top: 1rem;
 }
 
-nav a {
+nav a{
       text-decoration: none;
       text-align: center;
       justify-content: center;
@@ -107,26 +107,26 @@ nav a:focus {
       justify-content: center;
 }
 
-.hero {
+.hero{
       min-height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient;(
+      background: linear-gradient(
             135deg,
-            var(--color-primary);
-            var(--color-secondary);
+            var(--color-primary),
+            var(--color-secondary)
       );
       color: #FFFFFF;
       padding: 2rem;
       text-align: center;
 }
 
-.hero-content {
+.hero-content{
       max-width: 700px;
 }
 
-.hero-actions {
+.hero-actions{
       margin-top: 1.5rem;
       display: flex;
       justify-content: center;
@@ -134,7 +134,7 @@ nav a:focus {
       flex-wrap: wrap;
 }
 
-.button {
+.button{
       padding: 0.75rem 1.5rem;
       border-radius: 999px;
       text-decoration: none;
@@ -157,11 +157,11 @@ nav a:focus {
       color: white;
 }
 
-.categories {
+.categories{
       padding: 2rem;
 }
 
-.category-grid {
+.category-grid{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
@@ -172,10 +172,10 @@ nav a:focus {
       background-color: var(--color-surface);
       padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 8px 20px rGba (0,0,0,0.05);
+      box-shadow: 0 8px 20px rgba (0, 0, 0, 0.05);
 }
       
-footer {
+footer{
       background-color: var(--color-primary);
       color: white;
       text-align: center;
@@ -183,7 +183,7 @@ footer {
       margin-top: 2rem;
 }
 
-a: focus {
+a:focus{
       outline: 3px solid var(color-accent);
       outline-offset: 3px;
 }
