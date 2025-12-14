@@ -23,3 +23,162 @@
        
 
  Insert all your glorious CSS styles below! */
+:root {
+      color-primary:#1E3A8A;
+      color-secondary:#3B82F6;
+      color-accent:#FACC15;
+      color-surface:#FFFFFF;
+      color-text: #1F2933;
+}
+
+@font-face {
+      font-family: 'Inter';
+      src: url('fonts/inter/') format('');
+}
+
+html {
+      font-size: clamp(1rem,1vw +0.5rem,1.25rem);
+      scroll-behavior: smooth;
+}
+
+body {
+      margin: 0
+      font-family: 'Inter', ;
+      bacground-color: var(color-bg);
+      color: var(color-text);
+      line-height:1.6;
+}
+
+.skip-link {
+      position: absolute;
+      top: -40px;
+      left: 1rem;
+      background-color: var(color-accent);
+      color: #000;
+      padding: 0.5rem 1rem;
+      text-declaration: none;
+}
+
+.skip-link: focus {
+      top: 1rem;
+}
+
+header {
+      background-color: var(color-surface);
+      padding: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+      margin: 0;
+}
+
+header h2 {
+      margin-top: 0.25rem;
+      font-weight: normal;
+      color: #555;
+}
+
+nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin-top: 1rem;
+}
+
+nav a {
+      text-decoration: none;
+      color: var(color-text);
+      font-weight: 600;
+}
+
+nav a: hover,
+nav a: focus {
+      color: var(color-primary);
+}
+
+.hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+            135deg,
+            var(color-primary)
+            var(color-secondary)
+      );
+      color: #FFFFFF;
+      padding: 2rem;
+      text-align: center;
+}
+
+.hero-content {
+      max-width: 700px;
+}
+
+.hero-actions {
+      margin-tops: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+}
+
+.button {
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus{
+      transform: translateY(-3px);
+}
+
+.button.primary{
+      background-color: var(color-surface);
+      color: var(color-primary)
+}
+
+.button.secondary{
+      border: 2px solid white;
+      color: white;
+}
+
+.categories {
+      padding: 2rem;
+}
+
+.category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+      gap: 1.5rem;
+      margin-top: 1rem;
+}
+
+.card{
+      background-color: var(color-surface);
+      padding: 1.5rem
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rbga (0,0,0, 0.05);
+}
+      
+.footer {
+      background-color: var(color-primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+}
+
+a: focus {
+      outline: 3px solid var(color-accent);
+      outline-offset: 3px;
+}
+      
+
+      
+      
