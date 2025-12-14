@@ -33,8 +33,8 @@
 }
 
 @font-face{
-      font-family: 'Inter';
-      src: url('fonts/inter/') format('');
+      font-family:sans-serif;
+      src: url('fonts/PT_Sans_Narrow') format('.tff');
 }
 
 html{
@@ -166,7 +166,7 @@ nav a:focus {
 .category-grid{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
       margin-top: 1rem;
 }
 
