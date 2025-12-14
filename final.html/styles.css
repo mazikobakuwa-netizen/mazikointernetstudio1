@@ -33,8 +33,15 @@
 }
 
 @font-face{
-      font-family:sans-serif;
-      src: url('fonts/PT_Sans_Narrow') format('.tff');
+      font-family:'PT Sans Narrow';
+      src: url('fonts/PT_Sans_Narrow/PT_Sans-Narrow-Regular.tff') format('truetype');
+      font-weight:400;
+}
+
+@font-face{
+      font-family:'Roboto Slab';
+      src: url('fonts/Roboto_Slab/static/RobotoSlab-Regular.tff') format('truetype');
+      font-weight:400;
 }
 
 html{
@@ -44,7 +51,7 @@ html{
 
 body{
       margin: 0;
-      font-family: 'Inter';
+      font-family: 'PT Sans Narrow',sans-serif;
       background-color: var(--color-bg);
       color: var(--color-text);
       line-height:1.6;
@@ -67,6 +74,7 @@ body{
 header{
       background-color: var(--color-surface);
       padding: 1rem;
+      font-family: 'Roboto Slab',serif;
       text-align: center;
       border-bottom: 1px solid #e5e7eb;
 }
@@ -74,11 +82,13 @@ header{
 header h1{
       margin: 0;
       text-align: center;
+      font-family: 'Roboto Slab',serif;
 }
 
 header h2{
       margin-top: 0.25rem;
       font-weight: normal;
+      font-family: 'PT Sans Narrow',sans-serif;
       text-align: center;
       color: #555;
 }
@@ -86,7 +96,8 @@ header h2{
 nav ul{
       list-style: none;
       display: flex;
-      justify-content: center;
+      justify-content: center; 
+      font-family:'Roboto Slab',serif;
       text-align: center;
       gap: 1.5rem;
       padding: 0;
