@@ -27,9 +27,10 @@
       --color-primary:#1E3A8A;
       --color-secondary:#3B82F6;
       --color-accent:#D2B48C;
-      --color-surface:#FFFFFF;
+      --color-surface: #FFFFFF
+      --color-bg:#F9FAFB;
       --color-text: #1F2933;
-      --color-bg: #F9FAFB;
+      
 }
 
 @font-face{
@@ -52,8 +53,7 @@ html{
 body{
       margin: 0;
       font-family: 'PT Sans Narrow',sans-serif;
-      text-align:left
-      background-color: var(--color-bg);
+      background-color:var(--color-bg);
       color: var(--color-text);
       line-height:1.6;
 }
@@ -63,7 +63,7 @@ body{
       top: -40px;
       left: 1rem;
       background-color: var(--color-accent);
-      color: #000;
+      color: #3A2F1C;
       padding: 0.5rem 1rem;
       text-decoration: none;
 }
@@ -73,11 +73,9 @@ body{
 }
 
 header{
-      background-color: var(--color-surface);
-      padding: 1rem;
-      font-family: 'Roboto Slab',serif;
-      text-align: center;
-      border-bottom: 1px solid #e5e7eb;
+      background-color: #E6D3B1;
+      padding: 1.5rem;
+      border-bottom: 4px solid var(--color-primary);
 }
 
 header h1{
@@ -86,7 +84,7 @@ header h1{
       font-family: 'Roboto Slab',serif;
 }
 
-header h2{
+header h2,h3,h4{
       margin-top: 0.25rem;
       font-weight: normal;
       font-family: 'PT Sans Narrow',sans-serif;
@@ -94,48 +92,34 @@ header h2{
       color: #555;
 }
 
-header h3{
-      font-family:'PT Sans Narrow',sans-serif;
-      font-weight: normal;
-      text-align: left;
-      color: #D2B48C;
+nav{
+      background-color:var(--color-primary);
+      padding:0.75rem 1rem;
 }
-
-header h4{
-      font-family:'PT Sans Narrow',sans-serif;
-      font-weight: normal;
-      text-align: left;
-      color: #D2B48C;
-}
-
+      
 nav ul{
       list-style: none;
       display: flex;
-      justify-content: center; 
-      font-family:'Roboto Slab',serif;
-      text-align: center;
+      justify-content: flex-end; 
       gap: 1.5rem;
       padding: 0;
-      margin-top: 1rem;
+      margin: 0;
 }
 
 nav a{
       text-decoration: none;
-      text-align: center;
-      justify-content: center;
-      color: var(--color-text);
-      font-weight: 600;
+      font-weight:500;
+      color: white;
+      font-family: 'Roboto Slab', serif;
 }
 
 nav a:hover,
 nav a:focus {
-      color: var(--color-primary);
-      justify-content: center;
+      text-decoration:underline;
 }
 
 .hero{
-      min-height: 300vh;
-      width: 100% (auto-fit,minmax(1500px,1fr));
+      min-height: 70vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -144,13 +128,20 @@ nav a:focus {
             var(--color-primary),
             var(--color-secondary)
       );
-      color: #FFFFFF;
-      padding: 2rem;
+      color:white;
+      padding: 3rem 1.5rem;
       text-align: center;
 }
 
 .hero-content{
-      width: 100% (auto-fit,minmax(1500px,1fr));
+      max width: 700px;
+}
+
+.hero-content h3{
+      font-family:'Roboto Slab',serif;
+      font-size:2rem;
+      font-weight:700;
+      margin-bottom:1rem;
 }
 
 .hero-buttons{
@@ -176,48 +167,55 @@ nav a:focus {
 }
 
 .button.primary{
-      background-color: var(--color-primary);
-      color: var(--color-primary)
+      background-color: var(--color-accent);
+      color: #3A2F1C;
 }
 
 .button.secondary{
       background-color:transparent;
-      border: 2px (--color-primary);
-      color: var(--color-primary);
+      border: 2px solid var(--color-accent);
+      color: var(--color-accent);
 }
 
 .categories{
-      padding: 20rem;
-      gap: 20rem;
+      padding: 3rem 1.5rem;
+}
+
+categories h3{
+      text-align:center;
+      font-family:'Roboto Slab',serif;
+      font-size:1.75rem;
+      margin-bottom:2rem;
 }
 
 .category-grid{
       display: grid;
-      display: flex;
-      flex-direction: column; 
-      height: 100%;
-      background-color: var(--color-primary)
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr))
+      gap:2rem;
 }
 
 .card{
-      background-color: var(--color-primary);
-      padding: 20rem;
-      border-radius: 8px;
-      box-shadow: 0 8px 20px rgba (0, 0, 0, 0.05);
-      display: flex;
-      flex-direction: column; /* Stacks image and content vertically */
-      height: 100%; /* Ensures all cards in a row have equal height */
+      background-color:#F1E3C6;
+      padding: 1.5rem;
+      border-radius: 16px;
+      text-align:center;
+      box-shadow: 0 10px 25px rgba (0, 0, 0, 0.08);
+      transition:transform 0.2s ease;
 }
-      
+
+.card:hover{
+      transform:translateY(-5px);
+}
+
 footer{
       background-color: var(--color-primary);
       color: white;
       text-align: center;
       padding: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
 }
 
 a:focus{
-      outline: 3px solid var(color-accent);
+      outline: 3px solid var(--color-accent);
       outline-offset: 3px;
 }
