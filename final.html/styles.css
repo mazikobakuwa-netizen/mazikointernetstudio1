@@ -24,12 +24,13 @@
 
  Insert all your glorious CSS styles below! */
 :root{
-      --color-primary:#FFEE4D;
+      --color-primary:#6366F1;
       --color-secondary:#EEFBDD;
       --color-accent:#D2B48C;
-      --color-surface: #FFFFFF;
+      --color-surface:#FFFFFF;
       --color-bg:#F9FAFB;
-      --color-text: #FFFFFF;
+      --color-text:#1F2937;
+      --color-divider:#E5E7EB
       
 }
 
@@ -251,13 +252,14 @@ categories h3{
       border-radius: 16px;
       text-align:center;
       overflow:hidden;
-      box-shadow: 0 10px 25px rgba (0, 0, 0, 0.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
       transition:transform 0.2s ease;
 }
 .card img{
-      width:100%
+      width:100%;
       height:auto;
-      object-fit:cover;
+      max-height:220px
+      object-fit:contain;
       display:block;
       border-radius:12px;
 }
