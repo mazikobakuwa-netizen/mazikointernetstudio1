@@ -135,6 +135,7 @@ nav a:focus {
       justify-content: center;
       text-align: center;
       padding-top:4rem;
+      color:white;
 }
 
 .hero-image{
@@ -150,7 +151,15 @@ nav a:focus {
       position:relative;
       z-index:1;
       max-width:700px;
-      background-color:var(--color-primary);
+}
+
+.hero h3{
+      font-family:'Roboto Slab',serif;
+      font-weight:700;
+}
+
+.hero p{
+      color:white;
 }
 
 .hero-content h3{
