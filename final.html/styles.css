@@ -73,6 +73,7 @@ body{
 }
 
 header{
+      position:relative;
       background-color: #E6D3B1;
       padding: 1.5rem;
       z-index:10;
@@ -81,21 +82,27 @@ header{
 
 header h1{
       margin: 0;
+      position:relative;
       text-align: center;
       font-family: 'Roboto Slab',serif;
+      z-index:1;
 }
 
 header h2,h3,h4{
       margin-top: 0.25rem;
       font-weight: normal;
+      position:relative;
       font-family: 'PT Sans Narrow',sans-serif;
       text-align: center;
       color: #555;
+      z-index:1;
 }
 
 nav{
       background-color:var(--color-primary);
       padding:0.75rem 1rem;
+      position:relative;
+      z-index:1;
 }
       
 nav ul{
@@ -122,7 +129,8 @@ nav a:focus {
 .hero{
       min-height: 100vh;
       display: flex;
-      width:100%
+      width:100%;
+      position:relative;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -141,7 +149,7 @@ nav a:focus {
 .hero-content{
       position:relative;
       z-index:1;
-      max-width:700px
+      max-width:700px;
       background-color:var(--color-primary);
 }
 
@@ -160,6 +168,14 @@ nav a:focus {
       gap: 1rem;
       z-index:1;
       flex-wrap: wrap;
+}
+
+.header::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.35);
+      z-index:0;
 }
 
 .button{
