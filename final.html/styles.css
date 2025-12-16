@@ -24,12 +24,12 @@
 
  Insert all your glorious CSS styles below! */
 :root{
-      --color-primary:#1E3A8A;
-      --color-secondary:#3B82F6;
+      --color-primary:#FFEE4D;
+      --color-secondary:#EEFBDD;
       --color-accent:#D2B48C;
-      --color-surface: #FFFFFF
+      --color-surface: #FFFFFF;
       --color-bg:#F9FAFB;
-      --color-text: #1F2933;
+      --color-text: #FFFFFF;
       
 }
 
@@ -74,10 +74,18 @@ body{
 
 header{
       position:relative;
-      background-color: #E6D3B1;
+      background-color: #FFEEDD;
       padding: 1.5rem;
       z-index:10;
       border-bottom: 4px solid var(--color-primary);
+}
+
+header::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.45);
+      z-index:0;
 }
 
 header h1{
@@ -108,7 +116,7 @@ nav{
 nav ul{
       list-style: none;
       display: flex;
-      justify-content: flex-end; 
+      justify-content: center; 
       gap: 1.5rem;
       padding: 0;
       margin: 0;
@@ -180,13 +188,6 @@ nav a:focus {
       flex-wrap: wrap;
 }
 
-.header::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:rgba(0,0,0,1);
-      z-index:0;
-}
 
 .button{
       padding: 0.75rem 1.5rem;
@@ -204,7 +205,7 @@ nav a:focus {
 
 .button.primary{
       background-color: var(--color-accent);
-      color: #3A2F1C;
+      color: #C4E8DF;
 }
 
 .button.secondary{
